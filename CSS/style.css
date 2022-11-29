@@ -1,4 +1,11 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +21,9 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px 0px 50px;
+    
+    position: relative;
+    z-index: 1;
 }
 
 nav .logo {
@@ -60,6 +70,70 @@ nav .menu-btn i {
 }
 
 /* === End Navbar style === */
+
+/* === Header content === */
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    height: 100vh;
+    background-image: url('../img/Background_empty.jpg');
+    background-size: cover;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-header {
+    font-family: 'Satisfy';
+    font-size: 100px;
+    text-align: center;
+}
+
+.btn-us {
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+    margin-top: 10%;
+    color: white;
+    background-color: #F58BAB;
+}
+
+.btn-us:hover {
+    cursor: pointer;
+    background-color: #be6c84;
+}
+
+.buttons-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon-media {
+    font-size: 50px;
+}
+
+.icon-face {
+    color: #3A589E;
+}
+
+.icon-insta {
+    color: #FE0193;
+}
+
+.icon-whats {
+    color: #3EC34F;
+}
 
 /* Responsive desing */
 @media (max-width: 940px) {
