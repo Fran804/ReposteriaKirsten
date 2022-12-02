@@ -4,7 +4,8 @@
 
 :root {
     --background-white: #fafbfd;
-    --background-home: #F1E1D5;
+    --background-soft-pink: #F1E1D5;
+    --text-black: #292929;
 }
 
 
@@ -87,7 +88,7 @@ nav .menu-btn i {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--background-home)
+    background-color: var(--background-soft-pink)
 }
 
 .main-home-content{
@@ -117,7 +118,7 @@ nav .menu-btn i {
     font-family: 'Satisfy';
     font-size: 100px;
     text-align: center;
-    color: #292929;
+    color: var(--text-black);
 }
 
 .btn-us {
@@ -186,14 +187,27 @@ nav .menu-btn i {
     width: 85%;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     border-radius: 5px;
+    
 }
 
 .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 350px;
     height: 350px;
     margin-top: 5%;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    border-radius: 5px;
+    border-radius: 10px;
+    color: var(--text-black);
+    font-size: 20px;
+    background-color: var(--background-soft-pink);
+}
+
+.img-item {
+    width: 60%;
+    margin-bottom: 5%;
 }
 
 /* === End Menu content === */
