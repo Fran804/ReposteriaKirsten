@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+:root {
+    --background-white: #fafbfd;
+    --background-home: #F1E1D5;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -69,17 +75,36 @@ nav .menu-btn i {
     display: none;
 }
 
+.icon-chef {
+    margin-right: 5px;
+}
+
 /* === End Navbar style === */
 
-/* === Header content === */
+/* === Home content === */
 #Home {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3%;
     height: 100vh;
-    background-image: url('../img/Background_empty.jpg');
-    background-size: cover;
+    background-color: var(--background-home)
+}
+
+.main-home-content{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.img-content {
+    display: flex;
+    justify-content: center;
+}
+
+.img-rol {
+    width: 90%;
 }
 
 .header-content {
@@ -92,6 +117,7 @@ nav .menu-btn i {
     font-family: 'Satisfy';
     font-size: 100px;
     text-align: center;
+    color: #292929;
 }
 
 .btn-us {
@@ -103,20 +129,24 @@ nav .menu-btn i {
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 20px;
-    margin-top: 10%;
+    margin-top: 5%;
     color: white;
     background-color: #F58BAB;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 .btn-us:hover {
     cursor: pointer;
-    background-color: #be6c84;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .buttons-media {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .icon-media {
@@ -134,6 +164,40 @@ nav .menu-btn i {
 .icon-whats {
     color: #3EC34F;
 }
+
+/* === End Home content === */
+
+/* === Menu content === */
+#Menu {
+    background-color: var(--background-white);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+    width: 85%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+.card-item {
+    width: 350px;
+    height: 350px;
+    margin-top: 5%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+
+/* === End Menu content === */
+
 
 /* Responsive desing */
 @media (max-width: 940px) {
