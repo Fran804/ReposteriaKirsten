@@ -226,7 +226,7 @@ nav .menu-btn i {
 /* === End Menu content === */
 
 /* === Us content ===  */
-#Us {
+#About {
     margin-top: 4%;
 }
 
@@ -235,26 +235,26 @@ nav .menu-btn i {
     color: red;
 }
 
-.us-content {
+.about-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.us-info-content {
+.about-info-content {
     width: 80%;
     display: flex;
 }
 
-.text-us {
+.text-about {
     text-align: justify;
 }
 
-.button-container-us {
+.button-container-about {
     margin-top: 40px;
 }
 
-.button-contact-us {
+.button-contact-about {
     text-decoration: none;
     cursor: pointer;
     background-color: #ee707d;
