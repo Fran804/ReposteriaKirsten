@@ -209,7 +209,8 @@ nav .menu-btn i {
     justify-content: center;
     width: 350px;
     height: 350px;
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     border-radius: 10px;
     color: var(--text-black);
