@@ -1,16 +1,20 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 
 :root {
     --background-white: #fafbfd;
     --background-soft-pink: #F1E1D5;
     --text-black: #292929;
+    --yellow-soft: #ffffc0;
 }
 
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--background-white);
 }
 
 *{
@@ -76,6 +80,22 @@ nav .menu-btn i {
     display: none;
 }
 
+.title-header {
+    font-family: 'Satisfy';
+    font-size: 100px;
+    text-align: center;
+    color: var(--text-black);
+}
+
+.title-header, .space2{
+    margin-bottom: 2%;
+}
+
+.subtile-text {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+
 .icon-chef {
     margin-right: 5px;
 }
@@ -112,13 +132,6 @@ nav .menu-btn i {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.title-header {
-    font-family: 'Satisfy';
-    font-size: 100px;
-    text-align: center;
-    color: var(--text-black);
 }
 
 .btn-us {
@@ -170,7 +183,7 @@ nav .menu-btn i {
 
 /* === Menu content === */
 #Menu {
-    background-color: var(--background-white);
+    margin-top: 4%;
 }
 
 .menu-content {
@@ -185,9 +198,8 @@ nav .menu-btn i {
     flex-wrap: wrap;
     padding: 5%;
     width: 85%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
     border-radius: 5px;
-    
 }
 
 .card-item {
@@ -212,6 +224,44 @@ nav .menu-btn i {
 
 /* === End Menu content === */
 
+/* === Us content ===  */
+#Us {
+    margin-top: 4%;
+}
+
+.icon-heart {
+    font-size: 25px;
+    color: red;
+}
+
+.us-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.us-info-content {
+    width: 80%;
+    display: flex;
+}
+
+.text-us {
+    text-align: justify;
+}
+
+.button-container-us {
+    margin-top: 40px;
+}
+
+.button-contact-us {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ee707d;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
 
 /* Responsive desing */
 @media (max-width: 940px) {
