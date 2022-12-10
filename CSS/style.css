@@ -7,6 +7,7 @@
 :root {
     --background-white: #fafbfd;
     --background-soft-pink: #F1E1D5;
+    --background-pink: #E7AF9D;
     --text-black: #292929;
     --yellow-soft: #ffffc0;
 }
@@ -27,7 +28,7 @@ html {
 /* === Navbar style === */
 nav {
     height: 80px;
-    background: #E7AF9D;
+    background: var(--background-pink);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +146,7 @@ nav .menu-btn i {
     border-radius: 20px;
     margin-top: 5%;
     color: white;
-    background-color: #F58BAB;
+    background-color: #ee707d;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -225,7 +226,7 @@ nav .menu-btn i {
 
 /* === End Menu content === */
 
-/* === Us content ===  */
+/* === About content ===  */
 #About {
     margin-top: 4%;
 }
@@ -244,14 +245,66 @@ nav .menu-btn i {
 .about-info-content {
     width: 80%;
     display: flex;
+    flex-direction: row;
+}
+
+.info-about {
+    margin-left: 4%;
 }
 
 .text-about {
     text-align: justify;
 }
 
+.card-about-container {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-item-about {
+    width: 180px;
+    border: 1px solid #EF9A9A;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    color: #D32F2F;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #EF9A9A;
+    background-color: #FFEBEE;
+    padding: 5px 10px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.icon-about {
+    font-size: 30px;
+    color: #D32F2F;
+    margin-bottom: 5px;
+}
+
+.main-description {
+    color: #D32F2F;
+    font-size: 15px;
+    text-align: center;
+}
+
 .button-container-about {
-    margin-top: 40px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .button-contact-about {
@@ -264,7 +317,59 @@ nav .menu-btn i {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-/* Responsive desing */
+/* === End About content ===  */
+
+/* === Contact content ===  */
+
+#Contact {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+
+.info-contact {
+    width: 70%;
+}
+
+.separator-contact {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.location-contact {
+    display: flex;
+    justify-content: right;
+}
+
+.location-card-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2%;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    background-color: var(--background-soft-pink);
+}
+
+.img-location-contact {
+    width: 80%;
+    border-radius: 20px;
+}
+
+
+
+/* === End Contact content ===  */
+
+/* === Responsive desing === */
 @media (max-width: 940px) {
     nav ul {
         position: fixed;
@@ -303,5 +408,30 @@ nav .menu-btn i {
     nav ul li a.active {
         color: #E7AF9D;
         background: none;
+    }
+}
+
+@media (max-width: 1418px) {
+    #About {
+        height: auto;
+    }
+
+    .about-info-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-about-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .info-about {
+        margin-top: 2%;
+    }
+
+    .button-container-about {
+        display: flex;
+        justify-content: center;
     }
 }
