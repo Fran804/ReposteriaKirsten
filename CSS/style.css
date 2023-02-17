@@ -364,12 +364,27 @@ nav .menu-btn i {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     background-color: var(--background-soft-pink);
+    padding: 5%;
 }
 
 .img-location-contact {
     width: 90%;
     border-radius: 20px;
 }
+
+.fa-github {
+    color: #0a0a0a;
+}
+
+.fa-linkedin {
+    color: #0A66C2;
+}
+
+.fa-briefcase {
+    color: #4a2500;
+}
+
+
 /* === End Contact content ===  */
 
 /* === Foother === */
@@ -472,6 +487,15 @@ footer {
         font-size: 20px;
         text-align: center;
     }
+
+    .subtile-text, .text-contact-card {
+        text-align: center;
+    }
+
+    .location-card-contact {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 1418px) {
