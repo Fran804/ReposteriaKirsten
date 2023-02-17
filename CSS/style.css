@@ -42,6 +42,11 @@ nav .logo {
     font-size: 25px;
     color: white;
     font-weight: 600;
+    display: flex;
+}
+
+.text-navbar {
+    font-size: 23px;
 }
 
 nav ul {
@@ -323,6 +328,7 @@ nav .menu-btn i {
 
 #Contact {
     margin-top: 4%;
+    margin-bottom: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -331,12 +337,12 @@ nav .menu-btn i {
 
 .contact-container {
     display: flex;
-    width: 70%;
+    width: 80%;
     align-items: center;
 }
 
 .info-contact {
-    width: 70%;
+    width: 100%;
 }
 
 .separator-contact {
@@ -346,16 +352,15 @@ nav .menu-btn i {
 
 .location-contact {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .location-card-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 10%;
     border-radius: 10px;
-    padding: 2%;
-    width: 60%;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     background-color: var(--background-soft-pink);
 }
@@ -364,8 +369,6 @@ nav .menu-btn i {
     width: 80%;
     border-radius: 20px;
 }
-
-
 
 /* === End Contact content ===  */
 
@@ -381,14 +384,6 @@ nav .menu-btn i {
         display: block;
         text-align: center;
         transition: all 0.3s ease;
-    }
-
-    #menu-click:checked ~ ul{
-        left: 0%;
-    }
-
-    #menu-click:checked ~ .menu-btn i::before {
-        content: "\f00d";
     }
 
     nav .menu-btn i {
@@ -408,6 +403,53 @@ nav .menu-btn i {
     nav ul li a.active {
         color: #E7AF9D;
         background: none;
+    }
+
+    .img-content {
+        display: none;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .location-contact {
+        margin-top: 10%;
+    }
+
+    .location-card-contact {
+        margin-left: 0px;
+        width: 80%;
+    }
+
+    .info-contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .main-home-content {
+        flex-direction: column-reverse;
+    }
+
+    .buttons-media {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .title-header {
+        font-size: 80px;
+    }
+
+    .img-about img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .text-navbar {
+        font-size: 20px;
+        text-align: center;
     }
 }
 
