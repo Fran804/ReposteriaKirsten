@@ -149,11 +149,12 @@ nav .menu-btn i {
     background-color: #ee707d;
     text-decoration: none;
     transition: all 0.3s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btn-us:hover {
     cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #f6939d;
 }
 
 .buttons-media {
@@ -353,21 +354,41 @@ nav .menu-btn i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     padding: 2%;
-    width: 60%;
+    width: 70%;
+    height: 550px;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     background-color: var(--background-soft-pink);
 }
 
 .img-location-contact {
-    width: 80%;
+    width: 90%;
     border-radius: 20px;
 }
-
-
-
 /* === End Contact content ===  */
+
+/* === Foother === */
+footer {
+    margin-top: 5%;
+    background-color: var(--background-pink);
+    padding: 35px;
+    text-align: center;
+    color: var(--text-black);
+    font-weight: bold;
+}
+
+.social-medias-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-media-foother {
+    font-size: 35px;
+}
+/* === End Foother === */
 
 /* === Responsive desing === */
 @media (max-width: 940px) {
