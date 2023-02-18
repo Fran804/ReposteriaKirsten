@@ -33,7 +33,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 50px 0px 50px;
-    
     position: relative;
     z-index: 1;
 }
@@ -223,6 +222,25 @@ nav .menu-btn i {
     color: var(--text-black);
     font-size: 20px;
     background-color: var(--background-soft-pink);
+}
+
+.card-item:hover img {
+    transition: all 0.5s;
+    transform: translateY(-90px);
+}
+
+.card-item:hover p {
+    transition: all 0.5s;
+    transform: translateY(-90px);
+}
+
+.description-card-item {
+    opacity: 0%;
+}
+
+.card-item:hover .description-card-item {
+    transition: all 0.5s;
+    opacity: 100%;
 }
 
 .img-item {
