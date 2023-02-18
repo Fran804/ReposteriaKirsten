@@ -224,13 +224,26 @@ nav .menu-btn i {
     background-color: var(--background-soft-pink);
 }
 
+.card-item-title p {
+    transition: all 0.5s;
+}
+
+.card-item-price p {
+    transition: all 0.5s;
+}
+
+.card-item-description p {
+    transition: all 0.5s;
+}
+
 .img-item {
     width: 60%;
     margin-bottom: 5%;
     margin-top: 20%;
+    transition: all 0.5s;
 }
 
-.description-card-item {
+.card-item-description {
     display: flex;
     opacity: 0%;
     font-size: 14px; 
@@ -238,19 +251,15 @@ nav .menu-btn i {
     margin: 5%;
 }
 
-
-
 .card-item:hover img {
-    transition: all 0.5s;
     transform: translateY(-90px);
 }
 
 .card-item:hover p {
-    transition: all 0.5s;
     transform: translateY(-90px);
 }
 
-.card-item:hover .description-card-item {
+.card-item:hover .card-item-description {
     transition: all 0.5s;
     opacity: 100%;
 }
