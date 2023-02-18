@@ -224,6 +224,22 @@ nav .menu-btn i {
     background-color: var(--background-soft-pink);
 }
 
+.img-item {
+    width: 60%;
+    margin-bottom: 5%;
+    margin-top: 20%;
+}
+
+.description-card-item {
+    display: flex;
+    opacity: 0%;
+    font-size: 14px; 
+    text-align: center;
+    margin: 5%;
+}
+
+
+
 .card-item:hover img {
     transition: all 0.5s;
     transform: translateY(-90px);
@@ -234,18 +250,9 @@ nav .menu-btn i {
     transform: translateY(-90px);
 }
 
-.description-card-item {
-    opacity: 0%;
-}
-
 .card-item:hover .description-card-item {
     transition: all 0.5s;
     opacity: 100%;
-}
-
-.img-item {
-    width: 60%;
-    margin-bottom: 5%;
 }
 
 /* === End Menu content === */
